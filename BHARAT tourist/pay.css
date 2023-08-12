@@ -1,0 +1,468 @@
+/* /Navbar Start/ */
+/* #navbar{ */
+    /* background: #050404; */
+/* } */
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(247, 235, 235);
+    text-shadow: 0px 1px 1px rgb(237, 232, 232);
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(235, 219, 219);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* /Navbar End/ */
+
+/* payment */
+header{
+    min-height: 100vh;
+    background: #E1B600;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+}
+form{
+    padding: 1rem;
+}
+h3{
+    margin-top: 1rem;
+    color: #2c3e50;
+}
+form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+
+}
+#zip{
+    display: flex;
+    margin-top: 0.5rem;
+}
+#zip select{
+    padding: 0.5rem 0.7rem; 
+}
+#zip input[type="number"]{
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background:#ffa500;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #0b0a09;
+}
+/* payment */
+
+/* home */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+
+    
+}
+/Navbar Start/
+#navbar{
+    background: #050404;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(247, 235, 235);
+    text-shadow: 0px 1px 1px rgb(237, 232, 232);
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(235, 219, 219);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/Navbar End/
+/Home Section Start/
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(./back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550px;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550px;
+    text-shadow: 0px 1px 1px black;  
+    margin-top: 5px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black; 
+    animation: changetxt 10s infinite linear;
+}
+@keyframes changetxt{
+   0%{content: "Varanasi" ;}
+   10%{content: "Amritsar" ;}
+   20%{content: "Laddakh" ;}
+   30%{content: "Mumbai" ;}
+   40%{content: "Patna" ;}
+   40%{content: "Surat" ;}
+}
+
+
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600px;
+    text-shadow: 0px 1px 1px black;  
+    margin-top: 30px;
+    margin-top: 5px;
+
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media(max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media(max-width:450px){
+    .home.content.h5{
+        background-position: 50%;
+        font-size: 25px;
+    }
+    .home.content.h1{
+        font-size: 38px;
+    }
+    .home.content.p{
+        font-size: 13px;
+    }
+    
+}
+/Home Section End/
+
+/Booking Section Start/
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding:  20px;
+    }
+}
+/Booking Section End/
+/Packages Section Start/
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/Packages Section End/
+/Services Section Start/
+.services {
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services.card.card-body h3{
+    font-weight: 600;
+
+}
+.services .card .card-body{
+    text-align: center;
+}
+.services .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px; 
+}
+/Services Section End/ 
+/Explore Section Start/
+.explore{
+    margin-top: 50px;
+
+}
+.explore .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1 0px 4px 12 px);
+    cursor: pointer;
+}
+.explore .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.explore .card img:hover{
+    transform: scale(1.1);
+}
+/Explore Section End/ 
+
+.footer {
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+
+.footer{
+    
+    bottom: 0px;
+    width: 100%;
+    background: #ffa500;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size:1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+}
+.left .content p{
+    text-align: justify;
+}
+.left .content .social {
+    padding:  0 2px ;
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: #f12020;
+}
+/Footer Section End/
+
+.card{
+    height: 260px;
+    width: 460px;
+}
+
+.aboutUs{
+        font-size: 14px;
+        text-align: center;
+        margin: 40px;
+        /* background-color: #9be2f4; */
+        /* padding-top: 40px;       */
+}
+
+.footer {
+    /* margin-top: 40px; */
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+  }
+
+  .info{
+    margin: 25px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+  }
